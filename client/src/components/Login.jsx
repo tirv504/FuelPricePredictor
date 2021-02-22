@@ -7,12 +7,12 @@ class Login extends React.Component {
     this.state = {
       isRegistered: false,
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.handleRegister = this.handleRegister.bind(this);
   }
 
-  handleChange() {
+  handleRegister() {
     this.setState({
-      isRegistered: !this.state.isRegistered,
+      isRegistered: true,
     });
   }
 
@@ -21,7 +21,7 @@ class Login extends React.Component {
       return (
         <div>
           <div className="form">
-            <h2>Admin Login</h2>
+            <h2>User Login</h2>
             <div className="innerForm">
               <div className="userName">
                 <label>User Name</label>
@@ -42,9 +42,10 @@ class Login extends React.Component {
                   onChange={this.changeHandler}
                   required
                 ></input>
+                <button>Login</button>
               </div>
 
-              <button className="reviewBtn" onClick={this.handleChange}>
+              <button className="reviewBtn" onClick={this.handleRegister}>
                 Register
               </button>
             </div>
