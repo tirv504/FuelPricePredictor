@@ -19,7 +19,7 @@ class Register extends React.Component {
   render() {
     if (!this.state.isLoggedin) {
       return (
-        <div>
+        <form>
           <div className="form">
             <h2>Register User</h2>
             <div className="innerForm">
@@ -27,7 +27,7 @@ class Register extends React.Component {
                 <label>User Name</label>
                 <input
                   name="userName"
-                  placeholder="Login with your username"
+                  placeholder="Username"
                   value={this.userName}
                   onChange={this.changeHandler}
                 />
@@ -37,7 +37,7 @@ class Register extends React.Component {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Login with your password"
+                  placeholder="Password"
                   value={this.password}
                   onChange={this.changeHandler}
                   required
@@ -48,7 +48,7 @@ class Register extends React.Component {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Login with your password"
+                  placeholder="Re-enter Password"
                   value={this.password}
                   onChange={this.changeHandler}
                   required
@@ -61,7 +61,7 @@ class Register extends React.Component {
               </button>
             </div>
           </div>
-        </div>
+        </form>
       );
     } else {
       return (

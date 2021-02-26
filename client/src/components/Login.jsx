@@ -19,7 +19,7 @@ class Login extends React.Component {
   render() {
     if (!this.state.isRegistered) {
       return (
-        <div>
+        <form>
           <div className="form">
             <h2>User Login</h2>
             <div className="innerForm">
@@ -27,7 +27,7 @@ class Login extends React.Component {
                 <label>User Name</label>
                 <input
                   name="userName"
-                  placeholder="Login with your username"
+                  placeholder="Username"
                   value={this.userName}
                   onChange={this.changeHandler}
                 />
@@ -37,7 +37,7 @@ class Login extends React.Component {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Login with your password"
+                  placeholder="Password"
                   value={this.password}
                   onChange={this.changeHandler}
                   required
@@ -50,7 +50,7 @@ class Login extends React.Component {
               </button>
             </div>
           </div>
-        </div>
+        </form>
       );
     } else {
       return <Register />;
