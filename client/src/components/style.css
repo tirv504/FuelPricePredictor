@@ -1,0 +1,226 @@
+/* 
+1.  resets
+1.1 colors
+2. layouts
+3. components buttons links text
+*/
+
+/* resets */
+
+/* colors */
+:root {
+    /* CSS HEX */
+--gunmetal: #223843ff;
+--cultured: #eff1f3ff;
+--light-gray: #dbd3d8ff;
+--desert-sand: #d8b4a0ff;
+--terra-cotta: #d77a61ff;
+
+
+}
+
+/* bg colors */
+.bgc-gunmetal {
+    background-color: var(--gunmetal);
+}
+.bgc-cultured {
+    background-color: var(--cultured);
+}
+.bgc-light-gray {
+    background-color: var(--light-gray);
+}
+.bgc-desert-sand {
+    background-color: var(--desert-sand);
+}
+.bgc-terra-cotta {
+    background-color: var(--terra-cotta);
+}
+
+
+/* text colors */
+.textc-gunmetal {
+    color: var(--gunmetal);
+}
+.textc-cultured {
+    color: var(--cultured);
+}
+.textc-light-gray {
+    color: var(--light-gray);
+}
+.textc-desert-sand {
+    color: var(--desert-sand);
+}
+.textc-terra-cotta {
+    color: var(--terra-cotta);
+}
+
+
+
+
+
+/* layouts */
+
+body {
+    height: 100vh;
+}
+
+.container-100vh {
+    height: 100vh;
+}
+
+.container-padding {
+    padding: 4em;
+}
+
+.container-flex {
+    display:flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.center-align {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.center-margined {
+   justify-content: center;
+   margin: auto;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-justify-start {
+    justify-content: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    /* display: inherit; */
+}
+
+/* components */
+
+.main-section {
+    height: 80%;
+}
+
+/* buttons */
+
+/* links */
+.navbar {
+    height: 3em;
+    align-items: center;
+}
+
+.nav-links {
+    height: 100%;
+}
+.link-item {
+    list-style: none;
+    width: 5em;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+}
+
+.link-item:hover {
+    background-color: var(--light-gray);
+}
+
+
+.link-item.active {
+    background-color: var(--desert-sand);
+}
+
+/* card */
+
+.card {
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px 2px var(--light-gray);
+    /* padding: 1em 2em; */
+    width: 80%;
+    overflow: hidden;
+}
+
+.card-hero {
+    /* background-image: url('/images/young-woman-remote-working-in-a-cafe-picjumbo-com.jpg'); */
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    background: var(--gunmetal);
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    
+    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: exclusion;
+    /* background-color: var(--terra-cotta); */
+}
+
+
+.profile_page {
+    height: 100%;
+    /* background-color: var(--terra-cotta); */
+}
+
+.card-profile-content {
+    height: 80%;
+    width: 80%;
+}
+
+.input_group {
+    height: 2em;
+    margin-bottom: 0.8em;
+}
+
+.input_group label {
+    width: 30%;
+}
+
+.input_group input {
+    width: 70%;
+    border: none;
+}
+
