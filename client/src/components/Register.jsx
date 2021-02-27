@@ -21,7 +21,7 @@ class Register extends React.Component {
       return (
         <div>
           <div className="form">
-            <h2>Register User</h2>
+            <h2>Register <br/> User</h2>
             <div className="innerForm">
               <div className="userName">
                 <label>User Name</label>
